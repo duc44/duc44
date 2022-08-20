@@ -1,0 +1,26 @@
+b= parseInt(prompt("Unesi dan u ciframa"))
+a=b-1
+if(a==1){
+    console.log("Pon")
+}
+else if(a==2){
+    console.log("Uto")
+}
+else if(a==3){
+    console.log("Sre")
+}
+else if(a==4){
+    console.log("Cet")
+}
+else if(a==5){
+    console.log("Pet")
+}
+else if(a==6){
+    console.log("Sub")
+}
+else if(a==0){
+    console.log("Ned")
+}
+else{
+    console.log("Pokusaj ponovo")
+}
