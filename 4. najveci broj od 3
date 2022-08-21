@@ -1,0 +1,15 @@
+c1=prompt("Unesi prvi broj")
+c2=prompt("Unesi drugi broj")
+c3=prompt("Unesi treci broj")
+if(c1>c2&&c1>c3){
+    console.log("Prvi broj je najveci")
+}
+else if(c2>c1&&c2>c3){
+    console.log("Drugi broj je najveci")
+}
+else if(c3>c1&&c3>c2){
+    console.log("Treci broj je najveci")
+}
+else{
+    console.log("Brojevi su isti")
+}
