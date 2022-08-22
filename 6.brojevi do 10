@@ -1,0 +1,3 @@
+for(br=1; br<=10; br++){
+    console.log("Broj je",br);
+}
