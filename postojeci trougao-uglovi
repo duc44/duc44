@@ -1,9 +1,0 @@
-b1=parseInt(prompt("Unesi prvi ugao"))
-b2=parseInt(prompt("Unesi drugi ugao"))
-b3=parseInt(prompt("Unesi treci ugao"))
-if(b1+b2+b3===180){
-    console.log("Trougao je postojeci")
-}
-else{
-    console.log("Trougao ne postoji")
-}
