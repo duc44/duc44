@@ -1,0 +1,6 @@
+broj=parseInt(prompt("Unesi broj:"))
+for(let i=1;i<broj;i++){
+    if(i%3==0){
+        console.log(i)
+    }
+}
