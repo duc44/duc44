@@ -1,0 +1,5 @@
+gzbir=0
+for(g=0;g<=20;g=g+2){
+    gzbir+=g
+    console.log("Broj je",g,", a zbir je",gzbir)
+}
