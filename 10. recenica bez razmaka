@@ -1,0 +1,9 @@
+let recenica="Danas je nakon 3 sata padala kisa.";
+let recenica2="";
+duzina=recenica.length;
+for(i=0;i<duzina;i++){
+    if(recenica[i]!==" "){
+        recenica2+=recenica[i]
+    }
+}
+console.log(recenica2)
