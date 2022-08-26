@@ -1,0 +1,16 @@
+unos1=parseInt(prompt("Unesi prvi broj"))
+unos2=parseInt(prompt("Unesi drugi broj"))
+op=prompt("Unesi + za sabiranje, - za oduzimanje, * za mnozenje i / za deljenje")
+if(op==="+"){
+    console.log(unos1+unos2)
+}
+else if(op==="-"){
+    console.log(unos1-unos2)
+}
+else if(op==="*"){
+    console.log(unos1*unos2)
+}
+else if(op==="/"){
+    console.log(unos1/unos2)
+}
+console.log("Uneli ste pogresan znak")
