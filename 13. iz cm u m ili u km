@@ -1,0 +1,11 @@
+izbor=0
+unoscm=parseInt(prompt("Unesi duzinu u cm"))
+while(izbor!=1&&izbor!=2){
+    izbor=parseInt(prompt("1 za metre, 2 za kilometre"))
+}
+if(izbor===1){
+    console.log(unoscm,"cm je jednako",unoscm/100,"m.")
+}
+else{
+    console.log(unoscm,"cm je jednako",unoscm/1000,"km.")
+}
