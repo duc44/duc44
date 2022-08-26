@@ -1,0 +1,10 @@
+unos=parseInt(prompt("Unesi dvocifreni broj"))
+while(unos<=9||unos>=100){
+    unos=parseInt(prompt("Unesi dvocifreni broj"))
+}
+if(unos%2===0){
+    console.log("Broj je paran i dvocifren")
+}
+else{
+    console.log("Broj je neparan i dvocifren")
+}
