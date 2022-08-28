@@ -1,0 +1,12 @@
+let recenica="Danas je nakon 3 sata padala kisa.";
+let recenica2="";
+duzina=recenica.length;
+for(i=0;i<duzina;i++){
+    if((recenica[i-1])===" "||recenica===0){
+        recenica2+=recenica[i].toUpperCase();
+    }
+    else{
+        recenica2+=recenica[i]
+    }
+}
+console.log(recenica2)
