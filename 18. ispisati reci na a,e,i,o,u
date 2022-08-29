@@ -1,0 +1,16 @@
+let recenica="Ako ikad odem napolje i padne kisa, vracam se u kucu";
+let recenica2="";
+duzina=recenica.length;
+for(let i=0;i<duzina;i++){
+    if(recenica[i-1]===" "||i===0){
+        if(recenica[i]==="a"||recenica[i]==="e"||recenica[i]==="i"||recenica[i]==="o"||recenica[i]==="u"||
+           recenica[i]==="A"||recenica[i]==="E"||recenica[i]==="I"||recenica[i]==="O"||recenica[i]==="U"){
+            while(recenica[i]!==" " && recenica[i]!=="." && i!==duzina){
+                recenica2+=recenica[i];
+                i++
+            }
+            recenica2+=" "
+        }
+    }
+}
+console.log(recenica2)
