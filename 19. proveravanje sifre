@@ -1,0 +1,6 @@
+sifra="password"
+pokusaj=prompt("Unesi sifru")
+while(pokusaj!==sifra){
+    pokusaj=prompt("Pokusaj ponovo")
+}
+console.log("Tacna sifra")
