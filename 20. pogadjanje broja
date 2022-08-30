@@ -1,0 +1,12 @@
+let broj=73
+let broj1=0
+for(pokusaj=0;broj1!=broj;pokusaj++){
+    broj1=prompt("Unesi broj")
+    if(broj1<broj){
+        console.log("Pokusaj je manji od broja")
+    }
+    else if(broj1>broj){
+        console.log("Pokusaj je veci od broja")
+    }
+}
+console.log("Uneli ste tacan broj u",pokusaj,"pokusaja")
