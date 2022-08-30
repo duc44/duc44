@@ -1,0 +1,63 @@
+niz=""
+let visina=parseInt(prompt("Unesi zadnji broj u piramidi:"))
+for(i=1;i<=visina;i++){
+    rpt=i
+    for(ii=i;ii<visina;ii++){
+        if(rpt>=10){
+            niz+="   "
+        }
+        else if(rpt>=1&&rpt<=9){
+            niz+="   "
+        }
+    }    
+    for(rpt=i;rpt>=1;rpt--){
+        if(rpt!==1){
+            if(rpt>=10){
+                niz+=rpt+=" "
+            }
+            else if(rpt>=1&&rpt<=9){
+                niz+=rpt+"  "
+            }
+        }
+    }
+    for(rpt=1;rpt<=i;rpt++){
+        if(rpt>=9){
+            niz+=rpt+=" "
+        }
+        else if(rpt>=1&&rpt<=8){
+            niz+=rpt+"  "
+        }
+    }
+    console.log(niz)
+    niz=""
+}
+for(i=visina-1;i>=1;i--){
+    for(ii=visina;ii>i;ii--){
+        if(rpt>=10){
+            niz+="   "
+        }
+        else if(rpt>=1&&rpt<=9){
+            niz+="   "
+        }
+    }
+    for(rpt=i;rpt>=1;rpt--){
+        if(rpt!==1){
+            if(rpt>=10){
+                niz+=rpt+=" "
+            }
+            else if(rpt>=1&&rpt<=9){
+                niz+=rpt+"  "
+            }
+        }   
+    }
+    for(rpt=1;rpt<=i;rpt++){
+        if(rpt>=9){
+            niz+=rpt+=" "
+        }
+        else if(rpt>=1&&rpt<=8){
+            niz+=rpt+"  "
+        }
+    }
+    console.log(niz)
+    niz=""
+}
