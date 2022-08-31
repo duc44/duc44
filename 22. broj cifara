@@ -1,0 +1,8 @@
+let broj1=(prompt("Unesi broj:"))
+let broj2="1"+broj1
+let broj3=parseInt(broj2)
+for(cifra=-1;broj3>=1;cifra++){
+    broj3=broj3/10
+}
+console.log(broj1)
+console.log("Broj cifara je",cifra)
