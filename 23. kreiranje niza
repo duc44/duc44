@@ -1,0 +1,7 @@
+niz=[]
+for(i=0;i<10;i++){
+    unos=(prompt("unesi element"))
+    niz.push(unos)
+    console.log(niz[i])
+}
+console.log(niz)
