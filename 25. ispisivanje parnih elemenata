@@ -1,0 +1,9 @@
+var1=[]
+for(i=0;i<10;i++){
+    unos=parseInt(prompt("unesi element"))
+    if(unos%2===0){
+        var1.push(unos)
+    }
+    console.log(var1[i])
+}
+console.log(var1)
