@@ -1,0 +1,8 @@
+niz=[]
+ukupno=0
+for(i=0;i<10;i++){
+    niz[i]=+prompt("Unesi broj")
+    ukupno+=niz[i]
+    console.log(niz[i])
+}
+console.log(ukupno)
