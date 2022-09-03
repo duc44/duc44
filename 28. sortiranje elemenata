@@ -1,0 +1,29 @@
+normalnibrojac=1
+niz=[]
+brojelemenata=+prompt("Unesi broj elemenata")
+for(brindexa=0;brindexa<brojelemenata;brindexa++){
+    dodavanje=parseInt(prompt("Unesi broj"))
+    niz.push(dodavanje)
+}
+let duzina=niz.length
+console.log(niz)
+for(iii=1;iii<duzina;normalnibrojac++){
+    duzina=niz.length
+    for(i=0;i<duzina;i++){
+        br=0
+        for(ii=0;ii<duzina;ii++){
+            if(niz[i]>=niz[ii]){
+                br++
+            }
+            if(br===duzina){
+                console.log(normalnibrojac,". najveci je" ,niz[i])
+                najveci=i
+                break
+            }
+        }
+        if(br===duzina){
+            break
+        }
+    }
+    niz.splice(najveci,1)
+}
