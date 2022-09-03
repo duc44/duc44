@@ -1,0 +1,4 @@
+niz=[321,525,654,321,2]
+niz.forEach((el) => {
+    console.log(el)
+});
