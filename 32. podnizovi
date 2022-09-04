@@ -1,0 +1,6 @@
+niz=[[12,23,34], ["dsddsds","fdsfdsf"], [true,false]]
+for(i=0;i<niz.length;i++){
+    for(ii=0;ii<niz[i].length;ii++){
+        console.log(niz[i][ii])
+    }
+}
