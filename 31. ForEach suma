@@ -1,0 +1,4 @@
+sum=0
+niz=[321,525,33,321,2]
+niz.forEach((el) => sum+=el)
+console.log(sum)
