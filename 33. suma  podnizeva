@@ -1,0 +1,8 @@
+sum=0
+niz=[[12,23,3], [22,14], [11,11,11]]
+for(i=0;i<niz.length;i++){
+    for(ii=0;ii<niz[i].length;ii++){
+        sum+=niz[i][ii]
+    }
+}
+console.log(sum)
