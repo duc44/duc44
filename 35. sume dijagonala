@@ -1,0 +1,18 @@
+sum1=0
+sum2=0
+niz=[[2,4,1],
+    [6,3,1],
+    [5,4,7]];
+duzina=niz.length
+for(i=0;i<duzina;i++){
+    console.log(niz[i][i])
+    sum1+=niz[i][i]
+}
+console.log("suma glavne dijagonale je", sum1)
+ii=0
+for(i=duzina-1;i>=0;i--){
+    console.log(niz[i][ii])
+    sum2+=niz[i][ii]
+    ii++    
+}
+console.log("suma sporedne dijagonale je", sum2)
