@@ -1,0 +1,6 @@
+niz=""
+visina=parseInt(prompt("Unesi visinu trougla"))
+for(i=1;i<=visina;i++){
+    niz+="*"
+    console.log(niz)
+}
