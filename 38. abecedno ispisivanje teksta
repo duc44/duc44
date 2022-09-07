@@ -1,0 +1,20 @@
+recenica=prompt("Unesi tekst")
+recenica2=""
+temprecenica=""
+while(recenica2!=recenica){
+    for(ii=0;ii<recenica.length;ii++){
+        for(i=32;i<=122;i++){
+            if(i===32||i>=65){
+                temprecenica+=String.fromCharCode(i)
+                if(i!==32){
+                    console.log(temprecenica)
+                }
+                if(String.fromCharCode(i)===recenica[ii]){
+                    recenica2+=String.fromCharCode(i)
+                    break
+                }
+                temprecenica=recenica2
+            }
+        }
+    }
+}
