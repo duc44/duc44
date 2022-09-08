@@ -1,0 +1,5 @@
+niz=[32,34,22,1,555,20,13]
+filtrirano=niz.filter(el=>{
+    return el%2===0
+})
+console.log(filtrirano)
