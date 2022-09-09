@@ -1,0 +1,3 @@
+niz=[-22,-11,0,2,5,10]
+niz1=niz.filter(el=>el%2===0 && el>0).map(el=>el*3).reduce((pretEl,trenEl)=>{return pretEl+trenEl})
+console.log(niz1)
