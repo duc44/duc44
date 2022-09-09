@@ -1,0 +1,8 @@
+niz=[7,10,12,14,4]
+niz1=niz.map(el=>{
+    return (el*el*9)
+})
+niz2=niz1.filter(el=>{
+    return el<1000
+})
+console.log(niz2)
