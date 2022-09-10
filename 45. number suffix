@@ -1,0 +1,19 @@
+color=["Blue","Green","Yellow","Red","Orange","Purple","Black","White"]
+o=["th","st","nd","rd"]
+color.map((el,index)=>{
+    text=index+1;
+    if(index===0){
+        text+=o[1]
+    }
+    else if(index===1){
+        text+=o[2]
+    }
+    else if(index===2){
+        text+=o[3]
+    }
+    else{
+        text+=o[0]
+    }
+    text+=" choice is "+el
+    console.log(text)
+})
