@@ -1,0 +1,5 @@
+niz=[-14,26,21,13,19,55,46,58,96]
+suma=niz.filter(el=> el>12 && el<32)
+        .map(el=> el*5)
+        .reduce((pretEl,trenEl)=>{return pretEl+trenEl},299)
+console.log(suma)
