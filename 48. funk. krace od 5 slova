@@ -1,0 +1,6 @@
+function veciodpet(niz){
+    return niz.filter(el=>{
+        return el.length<=5
+    })
+}
+console.log(veciodpet(["dog","smiles","tree","new"]))
