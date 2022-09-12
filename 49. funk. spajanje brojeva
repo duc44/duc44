@@ -1,0 +1,6 @@
+function spajanje(arr){
+    return arr.reduce((el,value)=>{
+        return String(el)+value
+    },"")
+}
+console.log(spajanje([1,2,3]))
