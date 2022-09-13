@@ -1,0 +1,14 @@
+library=[
+    {author:"Bill",
+    title:"Road",
+    readingStatus:true},
+    {author:"steve",
+    title:"walter",
+    readingStatus:true},
+    {author:"Suzane",
+    title:"MockingJay",
+    readingStatus:false}
+]
+for(i=0;i<library.length;i++){
+    console.log(library[i])
+}
