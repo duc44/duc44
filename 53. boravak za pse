@@ -1,0 +1,16 @@
+pas={
+    ime:"Arci",
+    age:6,
+    rasa:"dalmatinac",
+    vakcinisan: true,
+    crvljiv:false
+}
+if(pas.vakcinisan&&pas.crvljiv){
+    console.log(pas.ime,"moze biti primljen")
+}
+else if(pas.vakcinisan||pas.crvljiv){
+    console.log(pas.ime,"moze biti primljen, ali sam")
+}
+else{
+    console.log(pas.ime,"ne moze biti primljen")
+}
