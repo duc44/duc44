@@ -1,0 +1,8 @@
+rez=[
+    {name:"George",cw:5,hb:17,hd:11},
+    {name:"Tyler",cw:20,hb:4,hd:11}
+]
+for(i=0;i<rez.length;i++){
+    rez[i].score=(rez[i].cw*5)+(rez[i].hb*3)+(rez[i].hd*2)
+    console.log(rez[i].name,rez[i].score)
+}
