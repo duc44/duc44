@@ -1,0 +1,16 @@
+function proveravanje(arg1) {
+    if (arg1 === 0) {
+        console.log("Broj je nula")
+    }
+    else if (arg1 % 2 === 0) {
+        console.log("Broj je paran")
+    }
+    else if (arg1 % 2 === 1) {
+        console.log("Broj je neparan")
+    }
+    else {
+        console.log("Uneli ste string")
+    }
+}
+broj = Number(prompt("Unesi broj"))
+proveravanje(broj)
