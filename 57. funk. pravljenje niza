@@ -1,0 +1,9 @@
+broj=Number(prompt("Unesite broj elemenata"))
+function pravljenjeniza(){
+    niz=[]
+    for(i=0;i<broj;i++){
+        niz.push(prompt("Unesi element"))
+    }
+    console.log(niz)
+}
+pravljenjeniza()
