@@ -1,0 +1,11 @@
+function sabiranje(){
+    sum=0
+    for(i=0;i<3;i++){
+        tren=Number(prompt("Unesi broj"))
+        sum+=tren
+        console.log(tren)
+        tren=0
+    }
+    return sum
+}
+console.log(sabiranje())
