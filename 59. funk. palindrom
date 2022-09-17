@@ -1,0 +1,16 @@
+function palindrom() {
+    rec = prompt("Unesi rec") + "";
+    console.log(rec)
+    recniz = rec.split("")
+    for (i = rec.length - 1; i > 0; i--) {
+        recniz.push(recniz[i - 1])
+        recniz.splice(i - 1, 1)
+    }
+    if (rec === recniz.join("")){
+        console.log("Rec je palindrom")
+    }
+    else{
+        console.log("Rec nije palindrom")
+    }
+}
+palindrom()
