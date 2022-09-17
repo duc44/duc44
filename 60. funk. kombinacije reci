@@ -1,0 +1,13 @@
+function mogucistr() {
+    moguciStr = []
+    rec = String(prompt("Unesi rec"))
+    for (i = 0; i < rec.length; i++) {
+        temprec = ""
+        for (ii = i; ii < rec.length; ii++) {
+            temprec += rec[ii]
+            moguciStr.push(temprec)
+        }
+    }
+    console.log(moguciStr)
+}
+mogucistr()
