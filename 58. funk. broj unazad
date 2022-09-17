@@ -1,0 +1,11 @@
+function unazad() {
+    broj = Number(prompt("Unesi broj")) +"";
+    console.log(broj)
+    brojniz=broj.split("")
+    for (i = broj.length-1; i > 0; i--) {
+        brojniz.push(brojniz[i-1])
+        brojniz.splice(i-1,1)
+    }
+    console.log(brojniz.join(""))
+}
+unazad()
