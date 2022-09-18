@@ -1,0 +1,19 @@
+function najduzaRec() {
+    rec = ""
+    recenica = prompt("Unesi recenicu")
+    console.log(recenica)
+    for (i = 0; i < recenica.length; i++) {
+        if (recenica[i - 1] === " " || i === 0) {
+            temprec = ""
+            while (recenica[i] !== " " && recenica[i] !== "." && i !== recenica.length) {
+                temprec += recenica[i]
+                i++
+            }
+            if (temprec.length > rec.length) {
+                rec = temprec
+            }
+        }
+    }
+    console.log(rec)
+}
+najduzaRec()
