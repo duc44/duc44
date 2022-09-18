@@ -1,0 +1,14 @@
+function prvoSlovo(){
+    recenica=String(prompt("Unesi recenicu"))
+    recenica2=""
+    for(i=0;i<recenica.length;i++){
+        if(recenica[i-1]===" "||i===0)[
+            recenica2+=recenica[i].toUpperCase()
+        ]
+        else{
+            recenica2+=recenica[i]
+        }
+    }
+    console.log(recenica2)
+}
+prvoSlovo()
