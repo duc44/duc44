@@ -1,0 +1,7 @@
+function bool(odg) {
+    if (odg) {
+        return "da"
+    }
+    return "ne"
+}
+console.log(bool(true))
