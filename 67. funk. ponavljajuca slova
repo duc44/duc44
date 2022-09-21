@@ -1,0 +1,21 @@
+function duplicateEncode(word) {
+    res = ""
+    arr = word.split("")
+    for (i = 0; i < arr.length; i++) {
+        br = 0
+        for (ii = 0; ii < arr.length; ii++) {
+            if (arr[i].toUpperCase() === arr[ii].toUpperCase()) {
+                br++
+            }
+        }
+        if (br >= 2) {
+            res += ")"
+        }
+        else {
+            res += "("
+        }
+    }
+    return res
+}
+
+console.log(duplicateEncode("Sesir"))
