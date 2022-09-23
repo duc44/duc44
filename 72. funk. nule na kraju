@@ -1,0 +1,24 @@
+function moveZeros(arr) {
+    ii = 0
+    final = []
+    final.length = arr.length
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] == 0) {
+            while (arr[i] === 0) {
+                i++
+            }
+            final[ii] = arr[i]
+        }
+        else {
+            final[ii] = arr[i]
+        }
+        ii++
+    }
+    for (iii = 0; iii < final.length; iii++) {
+        if (final[iii] === undefined) {
+            final[iii] = 0
+        }
+    }
+    return final
+}
+console.log(moveZeros([1, 3, 5, 3, 5, 8, 0, 0, 6, 0]))
