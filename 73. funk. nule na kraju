@@ -1,0 +1,8 @@
+function moveZeros(arr) {
+    newarr = arr.filter(el => el != 0 && el != "0")
+    for (len = arr.length - newarr.length; len != 0; len--) {
+        newarr.push(0)
+    }
+    return newarr
+}
+console.log(moveZeros([0,1,0,2,0,3,0,4,0]))
