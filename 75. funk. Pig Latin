@@ -1,0 +1,15 @@
+function pigIt(str) {
+    final = []
+    for (i = 0; i < str.split(" ").length; i++) {
+        temparr = str.split(" ")[i].split("")
+        temparr.push(temparr.shift())
+        if (str.split(" ")[i].length > 1 || str.split(" ")[i].charCodeAt(0) > 65) {
+            final.push(temparr.join("") + "ay")
+        }
+        else {
+            final.push(temparr.join(""))
+        }
+    }
+    return final.join(" ")
+}
+console.log(pigIt("Hello world !"))
