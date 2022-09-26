@@ -1,0 +1,11 @@
+function solution(string) {
+    final = ""
+    for (i = 0; i < string.length; i++) {
+        if (string[i] === string[i].toUpperCase()) {
+            final += " "
+        }
+        final += string[i]
+    }
+    return final
+}
+console.log(solution("JavaScriptkod"))
