@@ -1,0 +1,7 @@
+function arrayDiff(a, b) {
+    for (i = 0; i < b.length; i++) {
+        a = a.filter(el => el != b[i])
+    }
+    return a
+}
+console.log(arrayDiff([1, 2, 3, 3, 3, 3, 4, 2, 2, 6, 6, 4, 4], [2, 3]))
