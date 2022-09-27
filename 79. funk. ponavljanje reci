@@ -1,0 +1,9 @@
+function mod(str, a, b) {
+    res = ""
+    arr = str.split(" ")
+    for (i = 0; i < b; i++) {
+        res += arr[a] + " "
+    }
+    return res
+}
+console.log(mod("This is a string", 3, 5))
