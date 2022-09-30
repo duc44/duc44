@@ -1,0 +1,4 @@
+function brojSamoglasnika(arg){
+    return arg.match(/[aeiou]/gi).length
+}
+console.log(brojSamoglasnika("JavaScript"))
