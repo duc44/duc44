@@ -1,0 +1,6 @@
+function squareDigits(num) {
+    final=""
+    String(num).split("").forEach(el=>final+=el*el)
+    return Number(final);
+}
+console.log(squareDigits(4212))
