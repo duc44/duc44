@@ -1,0 +1,11 @@
+function mojMap(niz,clbfunk){
+    noviniz=[]
+    for(i=0;i<niz.length;i++){
+        noviniz.push(clbfunk(niz[i]))
+    }
+    return noviniz
+}
+function mapfunk(val){
+    return (val*2+15)
+}
+console.log(mojMap([5,8,12,22,30],mapfunk))
