@@ -1,0 +1,13 @@
+function mojFIlter(arr, clb) {
+    arr2 = []
+    for (i = 0; i < arr.length; i++) {
+        if (clb(arr[i])) {
+            arr2.push(arr[i])
+        }
+    }
+    return arr2
+}
+function clbfilter(el) {
+    return el > 10
+}
+console.log(mojFIlter([2, 5, 10, 22, 50], clbfilter))
