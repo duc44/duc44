@@ -1,0 +1,4 @@
+function highAndLow(numbers) {
+    return String(Math.max(...numbers.split(" ").map(el=>Number(el))))+" "+String(Math.min(...numbers.split(" ").map(el=>Number(el))))
+}
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
