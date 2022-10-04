@@ -1,0 +1,9 @@
+var countBits = function (n) {
+    for(i=sum=0;i<(n >>> 0).toString(2).split("").length;i++){
+        if((n >>> 0).toString(2).split("")[i]==="1"){
+            sum+=1
+        }
+    }
+    return sum
+}
+console.log(countBits(100))
