@@ -1,0 +1,17 @@
+function accum(s){
+    final=[]
+    for(i=0;i<s.length;i++){
+        for(ii=0;ii<=i;ii++){
+            if(ii===0){
+                final.push(s[i].toUpperCase())
+            }
+            else{
+                final.push(s[i].toLowerCase())
+            }
+        }
+        final.push("-")
+    }
+    final.pop()
+    return final.join("")
+}
+console.log(accum("abcd"))
