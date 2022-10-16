@@ -1,0 +1,6 @@
+function isIsogram(str){
+    return 0===str.toLowerCase().split("").sort().filter((el,index,)=>{
+        return el===str.toLowerCase().split("").sort()[index+1]
+    }).length
+}
+console.log(isIsogram("Ponavljanje"))
