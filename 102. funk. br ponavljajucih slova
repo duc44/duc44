@@ -1,0 +1,10 @@
+function duplicateCount(text){
+    return text.toLowerCase().split("").sort().filter((el,index,)=>{
+        return el===text.toLowerCase().split("").sort()[index+1]
+    }).filter((el,index)=>{
+        return el!==text.toLowerCase().split("").sort().filter((el,index,)=>{
+            return el===text.toLowerCase().split("").sort()[index+1]
+        })[index+1]
+    }).length
+}
+console.log(duplicateCount("znasRazumes"))
