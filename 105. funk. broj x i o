@@ -1,0 +1,9 @@
+function XO(str) {
+    xcount=ocount=0
+    str.split("").forEach(el=>{
+        el.toUpperCase()==="O" ? ocount++ : ocount=ocount;
+        el.toUpperCase()==="X" ? xcount++ : xcount=xcount;
+    })
+    return xcount===ocount
+}
+console.log(XO("xxoo"))
