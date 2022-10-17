@@ -1,0 +1,4 @@
+function toJadenCase(str){
+    return str.split("").map((el,index)=>str.split("")[index-1]===" " ? el.toUpperCase() : el=el).join("")
+}
+console.log(toJadenCase("How can mirrors be real if our eyes aren't real"))
