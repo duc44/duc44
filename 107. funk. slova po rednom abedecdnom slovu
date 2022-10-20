@@ -1,0 +1,4 @@
+function alphabetPosition(text) {
+    return text.split("").filter(el => { return el.toUpperCase() != el.toLowerCase() }).map(el =>{return el.toLowerCase()}).map(el=>{return el.charCodeAt()-96}).join(" ")
+}
+console.log(alphabetPosition("The sunset sets at twelve o' clock."))
