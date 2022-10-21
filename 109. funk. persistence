@@ -1,0 +1,14 @@
+function persistence(num) {
+    counter=0
+    if(num<=9){
+        return 0
+    }
+    while(num>=10){
+        num=String(num).split("").map(el=>el=Number(el)).reduce((pretEl,trenEl)=> {
+            return pretEl*trenEl
+        })
+        counter++
+    }
+    return counter
+}
+console.log(persistence(39))
