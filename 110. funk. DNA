@@ -1,0 +1,4 @@
+function DNAStrand(dna) {
+    return dna.split("").map(el => el === "A" ? el = "T" : (el === "T" ? el = "A" : (el === "G" ? el = "C" : el = "G"))).join("")
+}
+console.log(DNAStrand("ATTGC"))
