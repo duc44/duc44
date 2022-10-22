@@ -1,0 +1,4 @@
+function removeChar(str) {
+    return str.split("").filter((el,index)=>{return index!==0 && index!==str.length-1}).join("")
+};
+console.log(removeChar('eloquent'))
