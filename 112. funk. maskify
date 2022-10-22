@@ -1,0 +1,4 @@
+function maskify(cc) {
+    return cc.split("").reverse().map((el,index)=>{return index>3 ? el="#" : el=el}).reverse().join("")
+}
+console.log(maskify('46327462387432'))
