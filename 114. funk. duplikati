@@ -1,0 +1,9 @@
+var uniqueInOrder = function (iterable) {
+    if(iterable===""||iterable===[]){
+        return []
+    }
+    Array.isArray(iterable) ? iterable=iterable : iterable=iterable.split("")
+    iterable.push(iterable[iterable.length-1])
+    return iterable.filter((el,index)=>{return el!==iterable[index+1]})
+}
+console.log(uniqueInOrder([1,2,3,2,2,2,2]))
