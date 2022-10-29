@@ -1,0 +1,3 @@
+function century(year) {
+    return Number((String(year+99)).split("").filter((el,index)=>{return index!==(String(year+99)).length-1&&index!==(String(year+99)).length-2}).join(""))
+}
