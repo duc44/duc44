@@ -1,0 +1,4 @@
+function narcissistic(value){
+    return Array.from(String(value), Number).reduce((val1,val2)=>{return val1+Math.pow(val2,String(value).length)},0)===value
+}
+console.log(narcissistic(153))
