@@ -1,0 +1,4 @@
+function findUniq(arr) {
+    return arr[0]===arr[1] ? Number(arr.filter(el=>el!=arr[0])) : Number(arr.filter(el=>el!=arr[2]))
+}
+console.log(findUniq([1, 1, 1, 2, 1, 1]))
