@@ -1,0 +1,4 @@
+function solution(str) {
+    return str.split("").map((el, index) => { return str.split("")[index + 1] === undefined ? el + "_" : el + str.split("")[index + 1] }).filter((el, index) => { return index % 2 === 0 })
+}
+console.log(solution("razumes"))
