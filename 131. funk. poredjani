@@ -1,0 +1,6 @@
+function order(words) {
+    final=[]
+    words.split(" ").forEach(el => el.split("").forEach(ell=>final[ell-1]=el));
+    return final.join(" ")
+}
+console.log(order("is2 Thi1s T4est 3a"))
