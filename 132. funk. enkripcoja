@@ -1,0 +1,4 @@
+var encryptThis = function (text) {
+    return text.split(" ").map(el => el.split("").map((ell, index) => index === 0 ? ell = ell.charCodeAt() : (index === 1 ? ell = el[el.length - 1] : (index === el.length-1 ? ell = el[1] : ell))).join("")).join(" ")
+}
+console.log(encryptThis("enkripcija reci"))
