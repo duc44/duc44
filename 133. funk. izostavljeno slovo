@@ -1,0 +1,4 @@
+function findMissingLetter(array) {
+    return String.fromCharCode(array.filter((el, i) => String.fromCharCode(el.charCodeAt() + 1) !== array[i + 1]).shift().charCodeAt()+1)
+}
+console.log(findMissingLetter(['a', 'b', 'c', 'd', 'f']))
